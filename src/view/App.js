@@ -1,6 +1,6 @@
 
 import '../view/App.css'
-import TextTyping from '../component/Marquee/TextTyping';
+import TextTyping from '../component/TextTyping/TextTyping';
 function App() {
 
   return (

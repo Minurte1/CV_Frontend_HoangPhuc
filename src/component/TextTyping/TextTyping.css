@@ -1,0 +1,153 @@
+.wrap {
+    width: auto;
+    height: auto;
+
+
+}
+
+.Textyping-h1 {
+
+    font-family: monospace;
+    color: #333;
+    letter-spacing: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid black;
+    animation: typing 4s steps(40) infinite,
+        caret 0.5s steps(2) infinite;
+}
+
+@keyframes caret {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 550px;
+    }
+}
+
+
+
+@keyframes lines {
+    0% {
+        -webkit-transform: rotate(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(390deg);
+    }
+}
+
+section {
+    position: relative;
+    padding: 50px;
+    overflow: hidden;
+}
+
+section h1 {
+    text-transform: uppercase;
+    width: 150px;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid black;
+    margin: 0;
+}
+
+section p {
+    width: 50%;
+    line-height: 1.5em;
+    background-color: #aeaeae;
+    padding: 5px;
+}
+
+.section-1 {
+    background-color: #aeaeae;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    background-color: black;
+    width: 2000px;
+    height: 2px;
+}
+
+.line-1 {
+    right: 521px;
+    top: 33px;
+    animation: lines linear 100s infinite;
+}
+
+.line-2 {
+    left: 9;
+    top: 551px;
+    animation: lines linear 140s infinite;
+}
+
+.line-3 {
+    left: -212px;
+    top: 29px;
+    animation: lines reverse 120s infinite;
+}
+
+.line-4 {
+    left: -400px;
+    top: 20px;
+    animation: lines reverse 80s infinite;
+}
+
+
+
+
+
+
+
+#cycle:after {
+    -webkit-animation: cycle 4s infinite;
+    /* Safari 4+ */
+    -moz-animation: cycle 4s infinite;
+    /* Fx 5+ */
+    -o-animation: cycle 4s infinite;
+    /* Opera 12+ */
+    animation: cycle 4s infinite;
+    /* IE 10+, Fx 29+ */
+}
+
+#cycle:after {
+    animation-name: cycle;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    content: "";
+}
+
+@keyframes cycle {
+    0% {
+        content: "Corgi";
+    }
+
+    25% {
+        content: "Shih Tzu";
+    }
+
+    50% {
+        content: "Pug";
+    }
+
+    75% {
+        content: "Dachshund";
+    }
+
+    100% {
+        content: "Corgi";
+    }
+}

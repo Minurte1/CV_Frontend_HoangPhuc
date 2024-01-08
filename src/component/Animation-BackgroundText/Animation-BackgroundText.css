@@ -1,0 +1,66 @@
+@keyframes lines {
+    0% {
+        -webkit-transform: rotate(30deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(390deg);
+    }
+}
+
+section {
+    position: relative;
+    padding: 50px;
+    overflow: hidden;
+}
+
+section h1 {
+    text-transform: uppercase;
+    width: 150px;
+    padding: 0 0 15px 0;
+    border-bottom: 2px solid black;
+    margin: 0;
+}
+
+section p {
+    width: 50%;
+    line-height: 1.5em;
+    background-color: #aeaeae;
+    padding: 5px;
+}
+
+.section-1 {
+    background-color: #aeaeae;
+    overflow: hidden;
+}
+
+.line {
+    position: absolute;
+    background-color: black;
+    width: 2000px;
+    height: 2px;
+}
+
+.line-1 {
+    right: 521px;
+    top: 33px;
+    animation: lines linear 100s infinite;
+}
+
+.line-2 {
+    left: 9;
+    top: 551px;
+    animation: lines linear 140s infinite;
+}
+
+.line-3 {
+    left: -212px;
+    top: 29px;
+    animation: lines reverse 120s infinite;
+}
+
+.line-4 {
+    left: -400px;
+    top: 20px;
+    animation: lines reverse 80s infinite;
+}
