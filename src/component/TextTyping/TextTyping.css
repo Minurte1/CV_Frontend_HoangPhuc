@@ -169,7 +169,7 @@
 
         font-family: monospace;
         color: #333;
-        letter-spacing: 4px;
+        letter-spacing: 3px;
         white-space: nowrap;
         overflow: hidden;
         border-right: 4px solid black;
@@ -193,7 +193,7 @@
         }
 
         to {
-            width: 1290px;
+            width: 1008px;
         }
     }
 
@@ -220,6 +220,52 @@
         width: 550px;
     }
 }
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+
+
+
+
+
+
+@keyframes caret {
+    from {
+        border-color: transparent;
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 550px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

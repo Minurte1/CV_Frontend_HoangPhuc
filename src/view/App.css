@@ -4,7 +4,14 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 .App {
+    margin-top: -2%;
     width: 100%;
     height: 600px;
     position: relative;
@@ -41,7 +48,7 @@
 }
 
 .border {
-    margin-top: 70px;
+    margin-top: 10px;
     width: 100%;
     height: 2px;
     background-color: black;
@@ -60,11 +67,11 @@
 .App-backgroundRight {
     margin-left: 1%;
     width: 25%;
-    height: 1000px;
-
-    position: absolute;
+    height: 750px;
+    position: fixed;
+    /* position: absolute; */
     background-color: #fcebd7;
-
+    z-index: 5;
 }
 
 .App-backgroundRight-1 {
@@ -114,10 +121,71 @@
     width: 100%;
     height: 100px;
     background-color: white;
+
+
 }
 
 .App-backgroundRight-4 {
     width: 100%;
     height: 100px;
+    /* background-color: #fcebd7; */
     background-color: white;
+}
+
+.App-backgroundRight_Thongtinlienhe {
+    margin-top: 8%;
+    width: 100%;
+    height: 40PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fcdab3; */
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(105, 106, 97);
+
+}
+
+.App-backgroundRight_Thongtinlienhe :hover {
+    cursor: pointer;
+    /* background-color: #fcdab3; */
+    color: black;
+}
+
+.Thongtincanhan>h1 {
+    background-color: #fcebd7;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    padding-top: 5px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    color: rgb(105, 106, 97);
+}
+
+.tb {
+    margin-right: 5px;
+}
+
+.Thongtincanhan>p {
+    padding-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+
+}
+
+.Thongtincanhan {
+    margin-top: 2%;
+    width: 100%;
+    height: 50px;
+
+
+
 }

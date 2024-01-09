@@ -14,9 +14,18 @@ function App() {
           <div className='App-background_Imfomation'>
             <h1 className='Imfomation-Name'>Hoàng Phúc</h1>
             <h3 className='Imfomation-Name1'>Sinh viên năm 3 chuyên ngành công nghệ thông tin</h3>
-            <div className='border'></div>
+
             <div id='Component-Text'>
               <TextTyping className="Component-Text"></TextTyping>
+            </div>
+            <div className='border'></div>
+            <div className='Thongtincanhan'>
+              <h1 id='Thongtin'>THÔNG TIN CÁ NHÂN</h1>
+              <p><i class="fa-solid fa-phone tb"></i> 0327434821</p>
+              <p><i class="fa-solid fa-envelope tb"></i> hohoangphucjob@gmail.com</p>
+              <p><i class="fa-brands fa-github tb"></i> https://github.com/Minurte1</p>
+              <p></p>
+              <p></p>
             </div>
           </div>
 
@@ -31,6 +40,22 @@ function App() {
 
           <div className='App-backgroundRight-3'></div>
           <div className='App-backgroundRight-4'></div>
+          <div className='App-backgroundRight_Thongtinlienhe'>
+            <a href='#Thongtin'> <h2>THÔNG TIN CÁ NHÂN</h2></a>
+          </div>
+          <div className='App-backgroundRight_Thongtinlienhe'>
+            <a href='/'> <h2>KỸ NĂNG ĐÃ HỌC</h2></a>
+          </div>
+          <div className='App-backgroundRight_Thongtinlienhe'>
+            <a href='/'> <h2>DỰ ÁN ĐÃ LÀM</h2></a>
+          </div>
+          <div className='App-backgroundRight_Thongtinlienhe'>
+            <a href='/'> <h2>KINH NGHIỆM HỌC TẬP</h2></a>
+          </div>
+          <div className='App-backgroundRight_Thongtinlienhe'>
+            <a href='/'> <h2>CÔNG NGHỆ ĐÃ TIẾP CẬN</h2></a>
+          </div>
+
         </div>
       </div>
     </>
