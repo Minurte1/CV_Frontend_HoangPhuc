@@ -4,19 +4,9 @@ import './TextTyping.css'; // Import file CSS
 const TextTyping = () => {
     return (
         <> <div className="wrap-Textyping">
-            <h3 className='Textyping-h1'>Hello everyone. I am a website developer.</h3>
-            <section class="section-1">
-                <div class="line line-1"></div>
-                <div class="line line-2"></div>
-                <div class="line line-3"></div>
-                <div class="line line-4"></div>
-                <h1>About</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare malesuada risus. Pellentesque vel neque a quam vehicula egestas. Cras vestibulum nisi lorem, nec dictum nisi luctus eget. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    Nunc maximus, velit at blandit pulvinar, est nisl sodales leo, eu scelerisque ante mauris sed purus.</p>
-                <p>Maecenas blandit nec felis vel tincidunt. Curabitur id nibh dui. Ut suscipit interdum sem, sed auctor enim dignissim et. Nam luctus augue sit amet ullamcorper tincidunt. Donec posuere condimentum enim in dignissim. Ut purus ante, vehicula in luctus
-                    non, vestibulum non ipsum. Etiam semper urna sed nunc ornare.</p>
-            </section>
-            <span id="cycle"></span>
+            <h3 className='Textyping-h1'>"Hello everyone. I am Hoang Phuc, a website developer."</h3>
+
+            {/* <span id="cycle"></span> */}
         </div>
         </>
 

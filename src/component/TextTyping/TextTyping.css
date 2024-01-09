@@ -1,21 +1,205 @@
-.wrap {
-    width: auto;
-    height: auto;
+@media (min-width:320px) {
+
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+
+    }
+
+    .Textyping-h1 {
+        font-size: 12px;
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing320 4s steps(40) infinite,
+            caret320 0.5s steps(2) infinite;
+    }
+
+    @keyframes caret320 {
+
+
+        from {
+            border-color: transparent;
+
+        }
+
+        to {
+            border-color: black;
+        }
+    }
+
+    @keyframes typing320 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 380px;
+
+        }
+    }
+
 
 
 }
 
-.Textyping-h1 {
+@media (min-width:480px) {
 
-    font-family: monospace;
-    color: #333;
-    letter-spacing: 4px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid black;
-    animation: typing 4s steps(40) infinite,
-        caret 0.5s steps(2) infinite;
+    /* smartphones, Android phones, landscape iPhone */
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+
+
+    }
+
+    .Textyping-h1 {
+        font-size: 17px;
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing 4s steps(40) infinite,
+            caret 0.5s steps(2) infinite;
+    }
 }
+
+@media (min-width:600px) {
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .Textyping-h1 {
+        font-size: 25px;
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing 4s steps(40) infinite,
+            caret 0.5s steps(2) infinite;
+    }
+
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+
+@media (min-width:801px) {
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .Textyping-h1 {
+        font-size: 25px;
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing 4s steps(40) infinite,
+            caret 0.5s steps(2) infinite;
+    }
+}
+
+@media (min-width:1025px) {
+
+    /* big landscape tablets, laptops, and desktops */
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .Textyping-h1 {
+        font-size: 25px;
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing 5s steps(40) infinite,
+            caret 0.5s steps(2) infinite;
+    }
+}
+
+@media (min-width:1281px) {
+
+    /* hi-res laptops and desktops */
+    .wrap {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .Textyping-h1 {
+
+        font-family: monospace;
+        color: #333;
+        letter-spacing: 4px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing1281 4s steps(40) infinite,
+            caret1281 0.5s steps(2) infinite;
+    }
+
+    @keyframes caret1281 {
+        from {
+            border-color: transparent;
+        }
+
+        to {
+            border-color: black;
+        }
+    }
+
+    @keyframes typing1281 {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 1290px;
+        }
+    }
+
+}
+
+
 
 @keyframes caret {
     from {
@@ -37,74 +221,6 @@
     }
 }
 
-
-
-@keyframes lines {
-    0% {
-        -webkit-transform: rotate(30deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(390deg);
-    }
-}
-
-section {
-    position: relative;
-    padding: 50px;
-    overflow: hidden;
-}
-
-section h1 {
-    text-transform: uppercase;
-    width: 150px;
-    padding: 0 0 15px 0;
-    border-bottom: 2px solid black;
-    margin: 0;
-}
-
-section p {
-    width: 50%;
-    line-height: 1.5em;
-    background-color: #aeaeae;
-    padding: 5px;
-}
-
-.section-1 {
-    background-color: #aeaeae;
-    overflow: hidden;
-}
-
-.line {
-    position: absolute;
-    background-color: black;
-    width: 2000px;
-    height: 2px;
-}
-
-.line-1 {
-    right: 521px;
-    top: 33px;
-    animation: lines linear 100s infinite;
-}
-
-.line-2 {
-    left: 9;
-    top: 551px;
-    animation: lines linear 140s infinite;
-}
-
-.line-3 {
-    left: -212px;
-    top: 29px;
-    animation: lines reverse 120s infinite;
-}
-
-.line-4 {
-    left: -400px;
-    top: 20px;
-    animation: lines reverse 80s infinite;
-}
 
 
 

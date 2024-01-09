@@ -1,0 +1,123 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-color: #809ba8;
+}
+
+.App-background {
+    margin-top: 3%;
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+
+
+}
+
+.App-background_Imfomation {
+
+    width: 70%;
+    height: 500px;
+    background-color: white;
+
+}
+
+.Imfomation-Name {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: inherit; */
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-top: 10%;
+}
+
+.border {
+    margin-top: 70px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+#Component-Text {
+    margin-top: 30px;
+    background-color: white;
+}
+
+.Imfomation-Name1 {
+    background-color: white;
+    margin-left: 5px;
+}
+
+.App-backgroundRight {
+    margin-left: 1%;
+    width: 25%;
+    height: 1000px;
+
+    position: absolute;
+    background-color: #fcebd7;
+
+}
+
+.App-backgroundRight-1 {
+    width: 100%;
+    height: 100px;
+    border: 1px solid white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+
+.App-backgroundRight-1-1 {
+    width: 100%;
+    height: 150px;
+    background-color: #fcebd7;
+
+}
+
+.App-backgroundRight-1-2 {
+    margin-top: 15%;
+    width: 60%;
+    height: 220px;
+    border-radius: 50%;
+
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.Avatar {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+
+.App-backgroundRight-3 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+.App-backgroundRight-4 {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
