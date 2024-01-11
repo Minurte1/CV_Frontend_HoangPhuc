@@ -1,9 +1,17 @@
 
 import '../view/App.css'
-
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import TextTyping from '../component/TextTyping/TextTyping';
 // import AnimationBackgroundText from '../component/Animation-BackgroundText/Animation-BackgroundText';
 function App() {
+
+  const [speed, setSpeed] = useState(3);
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+
+    }, speed); return () => clearInterval(intervalId);
+  }, [speed]);
 
   return (
     <>
@@ -24,8 +32,12 @@ function App() {
               <p><i class="fa-solid fa-phone tb"></i> 0327434821</p>
               <p><i class="fa-solid fa-envelope tb"></i> hohoangphucjob@gmail.com</p>
               <p><i class="fa-brands fa-github tb"></i> https://github.com/Minurte1</p>
-              <p></p>
-              <p></p>
+
+            </div>
+
+            <div className='Kienthucdahoc'>
+              <h1>KIẾN THỨC ĐÃ HỌC</h1>
+              <img className='img-react' style={{ animation: `spin ${speed}s linear infinite` }} src={require('../public/image/logo512.png')}></img>
             </div>
           </div>
 
@@ -44,7 +56,7 @@ function App() {
             <a href='#Thongtin'> <h2>THÔNG TIN CÁ NHÂN</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
-            <a href='/'> <h2>KỸ NĂNG ĐÃ HỌC</h2></a>
+            <a href='/'> <h2>KIẾN THỨC ĐÃ HỌC</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
             <a href='/'> <h2>DỰ ÁN ĐÃ LÀM</h2></a>
@@ -60,6 +72,6 @@ function App() {
       </div>
     </>
   );
-}
 
+}
 export default App;

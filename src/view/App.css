@@ -33,7 +33,7 @@ html {
 .App-background_Imfomation {
 
     width: 70%;
-    height: 500px;
+    height: auto;
     background-color: white;
 
 }
@@ -186,6 +186,40 @@ a {
     width: 100%;
     height: 50px;
 
+}
 
+.Kienthucdahoc {
+    width: 100%;
+    height: 100px;
+    margin-top: 15%;
+}
 
+.Kienthucdahoc>h1 {
+    background-color: #fcebd7;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    padding-top: 5px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    color: rgb(105, 106, 97);
+}
+
+.img-react {
+    height: 100px;
+    width: 100px;
+    animation: spin 2s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
