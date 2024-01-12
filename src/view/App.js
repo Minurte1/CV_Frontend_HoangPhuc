@@ -38,6 +38,7 @@ function App() {
             <div className='Kienthucdahoc'>
               <h1>KIẾN THỨC ĐÃ HỌC</h1>
               <img className='img-react' style={{ animation: `spin ${speed}s linear infinite` }} src={require('../public/image/logo512.png')}></img>
+              <img className='img-react' src={require('../public/image/icons8-nodejs-480.png')}></img>
             </div>
           </div>
 
