@@ -13,7 +13,7 @@ html {
 .App {
     margin-top: -2%;
     width: 100%;
-    height: 600px;
+    height: auto;
     position: relative;
     background-color: #809ba8;
 }
@@ -21,7 +21,7 @@ html {
 .App-background {
     margin-top: 3%;
     width: 100%;
-    height: 1000px;
+    height: auto;
     background-color: white;
     position: absolute;
     display: flex;
@@ -33,7 +33,7 @@ html {
 .App-background_Imfomation {
 
     width: 70%;
-    height: auto;
+    height: 2000px;
     background-color: white;
 
 }
@@ -72,6 +72,7 @@ html {
     /* position: absolute; */
     background-color: #fcebd7;
     z-index: 5;
+    /* display: none; */
 }
 
 .App-backgroundRight-1 {
@@ -230,6 +231,44 @@ a {
 .span-nodejs {
     margin-top: 5%;
     margin-left: 10%;
+}
+
+.span-javascript {
+    margin-top: 5%;
+    margin-left: 9%;
+}
+
+.span-c {
+    margin-top: 5%;
+    margin-left: 12.3%;
+}
+
+.Duandalam {
+    margin-top: 12%;
+    width: 100%;
+    height: 50px;
+}
+
+.Duandalam>h1 {
+    background-color: #fcebd7;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    padding-top: 5px;
+    display: flex;
+    width: 80%;
+    align-items: center;
+    color: rgb(105, 106, 97);
+}
+
+.frontend {
+    margin-left: 1%;
+}
+
+.frontend>li {
+    margin-left: 2%;
 }
 
 @keyframes spin {

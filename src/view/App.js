@@ -36,16 +36,73 @@ function App() {
             </div>
 
             <div className='Kienthucdahoc'>
-              <h1>KIẾN THỨC ĐÃ HỌC</h1>
+              <h1 id='Kienthuc'>KIẾN THỨC ĐÃ HỌC</h1>
               <img className='img-react' style={{ animation: `spin ${speed}s linear infinite` }} src={require('../public/image/logo512.png')}></img>
 
               <img className='img-nodejs' src={require('../public/image/icons8-nodejs-480.png')}></img>
+              <img className='img-nodejs' src={require('../public/image/icons8-javascript-480.png')}></img>
+              <img className='img-nodejs' src={require('../public/image/icons8-css-480.png')}></img>
+              <img className='img-nodejs' src={require('../public/image/mysql.png')}></img>
+              <img className='img-nodejs' src={require('../public/image/c-sharp.png')}></img>
               <div>
                 <span className='span-logo'>Reactjs</span>
                 <span className='span-nodejs'>Nodejs</span>
+                <span className='span-javascript'>Javascript</span>
+                <span className='span-nodejs'>CSS</span>
+                <span className='span-nodejs' >MySQL</span>
+                <span className='span-c' >C#</span>
               </div>
 
             </div>
+            <div className='Duandalam'>
+              <h1>DỰ ÁN ĐÃ LÀM</h1>
+              <h3>Xây dựng website thương mại điện tử bán giày</h3>
+              <p><strong>Github: </strong>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</p>
+              <p><strong>Thông tin dự án: </strong>Dự án cá nhân - Từ ngày 11/11/2023 đến ngày 10/1/2024</p>
+
+              <li>Trong quá trình thực hiện project sử dụng các công nghệ để xây dựng website như: React, Nodejs, MySql, Docker</li>
+              <li>Trong quá trình thực hiện project có sử dụng thêm một số công cụ hỗ trợ như: Github, Nodemon, Bootstrap,...</li>
+
+              <p className='p-chucnang'><strong>Chức năng: </strong>
+                <ul className='frontend'>- Frontend
+                  <li>Chức năng thanh toán cho khách hàng</li>
+                  <li>Lấy thông tin của khách hàng</li>
+                  <li>Tìm kiếm sản phẩm</li>
+                  <li>Lọc sản phẩm</li></ul>
+                <ul className='frontend'>- Backend
+                  <li>Thêm sửa xóa hiển thị sản phẩm</li>
+                  <li>Thêm sửa xóa các hãng</li>
+                  <li>Thống kê đơn hàng</li>
+                  <li>Thống kê sản phẩm trong kho</li></ul>
+
+
+              </p>
+
+              <h3>Xây dựng website thương mại điện tử bán giày</h3>
+              <p><strong>Github: </strong>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</p>
+              <p><strong>Thông tin dự án: </strong>Dự án cá nhân - Từ ngày 11/11/2023 đến ngày 10/1/2024</p>
+
+              <li>Trong quá trình thực hiện project sử dụng các công nghệ để xây dựng website như: React, Nodejs, MySql, Docker</li>
+              <li>Trong quá trình thực hiện project có sử dụng thêm một số công cụ hỗ trợ như: Github, Nodemon, Bootstrap,...</li>
+
+              <p className='p-chucnang'><strong>Chức năng: </strong>
+                <ul className='frontend'>- Frontend
+                  <li>Chức năng thanh toán cho khách hàng</li>
+                  <li>Lấy thông tin của khách hàng</li>
+                  <li>Tìm kiếm sản phẩm</li>
+                  <li>Lọc sản phẩm</li></ul>
+                <ul className='frontend'>- Backend
+                  <li>Thêm sửa xóa hiển thị sản phẩm</li>
+                  <li>Thêm sửa xóa các hãng</li>
+                  <li>Thống kê đơn hàng</li>
+                  <li>Thống kê sản phẩm trong kho</li></ul>
+
+
+              </p>
+            </div>
+
+
+
           </div>
 
         </div>
@@ -64,7 +121,7 @@ function App() {
             <a href='#Thongtin'> <h2>THÔNG TIN CÁ NHÂN</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
-            <a href='/'> <h2>KIẾN THỨC ĐÃ HỌC</h2></a>
+            <a href='#Kienthuc'> <h2>KIẾN THỨC ĐÃ HỌC</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
             <a href='/'> <h2>DỰ ÁN ĐÃ LÀM</h2></a>
