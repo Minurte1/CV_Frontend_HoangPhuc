@@ -19,7 +19,7 @@
         white-space: nowrap;
         overflow: hidden;
         border-right: 4px solid black;
-        animation: typing320 4s steps(40) infinite,
+        animation: typing320 4s steps(40) infinite alternate,
             caret320 0.5s steps(2) infinite;
     }
 
@@ -173,7 +173,7 @@
         white-space: nowrap;
         overflow: hidden;
         border-right: 4px solid black;
-        animation: typing1281 4s steps(40) infinite,
+        animation: typing1281 4s steps(40) infinite alternate,
             caret1281 0.5s steps(2) infinite;
     }
 

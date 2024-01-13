@@ -4,6 +4,7 @@ import React, { useEffect } from 'react';
 import { useState } from 'react';
 import TextTyping from '../component/TextTyping/TextTyping';
 // import AnimationBackgroundText from '../component/Animation-BackgroundText/Animation-BackgroundText';
+
 function App() {
 
   const [speed, setSpeed] = useState(3);
@@ -12,6 +13,32 @@ function App() {
 
     }, speed); return () => clearInterval(intervalId);
   }, [speed]);
+
+  window.onload = function () {
+
+    const text = document.querySelector(".sec-text");
+    if (text) {
+      const load = () => {
+        setTimeout(() => {
+          text.textContent = "Web Developer";
+
+        }, 0)
+        setTimeout(() => {
+          text.textContent = "Web Frontend";
+
+        }, 5900)
+        setTimeout(() => {
+          text.textContent = "Web Backend";
+
+        }, 11900)
+      }
+      load();
+      setInterval(load, 12000)
+    } else {
+      console.error("Element with class 'sec-text' not found");
+    }
+
+  }
 
   return (
     <>
@@ -55,7 +82,7 @@ function App() {
 
             </div>
             <div className='Duandalam'>
-              <h1>DỰ ÁN ĐÃ LÀM</h1>
+              <h1 id='Duan'>DỰ ÁN ĐÃ LÀM</h1>
               <h3>Xây dựng website thương mại điện tử bán giày</h3>
               <p><strong>Github: </strong>https://github.com/Minurte1/csn-da21tta-hohoangphuc-bangiay-Javascript</p>
               <p><strong>Thông tin dự án: </strong>Dự án cá nhân - Từ ngày 11/11/2023 đến ngày 10/1/2024</p>
@@ -100,8 +127,19 @@ function App() {
 
               </p>
             </div>
+            <div className='Kinhnghiemhoctap'>
+              <h1 id='Hocvan'>HỌC VẤN</h1>
+              <h4>Hiện đang là sinh viên năm 3 - chuyên ngành Công Nghệ Thông Tin - Đại Học Trà Vinh</h4>
+              <li>Tháng 8/2021 - hiện nay</li>
 
+              <li>Đề tài cơ sở ngành: Xây dựng webiste thương mại điện tử bán giày - Nghiên cứu và phát triển một giải pháp hiệu quả cho vấn đề <br></br> cụ thể trong lĩnh vực Công nghệ Thông tin.</li>
 
+            </div>
+            <div className='Kinhnghiemhoctap'>
+
+              <p><strong>I'm a</strong> <p className='sec-text'></p></p>
+
+            </div>
 
           </div>
 
@@ -124,14 +162,14 @@ function App() {
             <a href='#Kienthuc'> <h2>KIẾN THỨC ĐÃ HỌC</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
-            <a href='/'> <h2>DỰ ÁN ĐÃ LÀM</h2></a>
+            <a href='#Duan'> <h2>DỰ ÁN ĐÃ LÀM</h2></a>
           </div>
           <div className='App-backgroundRight_Thongtinlienhe'>
-            <a href='/'> <h2>KINH NGHIỆM HỌC TẬP</h2></a>
+            <a href='#Hocvan'> <h2>HỌC VẤN</h2></a>
           </div>
-          <div className='App-backgroundRight_Thongtinlienhe'>
+          {/* <div className='App-backgroundRight_Thongtinlienhe'>
             <a href='/'> <h2>CÔNG NGHỆ ĐÃ TIẾP CẬN</h2></a>
-          </div>
+          </div> */}
 
         </div>
       </div>
