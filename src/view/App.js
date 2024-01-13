@@ -38,7 +38,13 @@ function App() {
             <div className='Kienthucdahoc'>
               <h1>KIẾN THỨC ĐÃ HỌC</h1>
               <img className='img-react' style={{ animation: `spin ${speed}s linear infinite` }} src={require('../public/image/logo512.png')}></img>
-              <img className='img-react' src={require('../public/image/icons8-nodejs-480.png')}></img>
+
+              <img className='img-nodejs' src={require('../public/image/icons8-nodejs-480.png')}></img>
+              <div>
+                <span className='span-logo'>Reactjs</span>
+                <span className='span-nodejs'>Nodejs</span>
+              </div>
+
             </div>
           </div>
 
@@ -48,6 +54,7 @@ function App() {
             <div className='App-backgroundRight-1-1'></div>
             <div className='App-backgroundRight-1-2'>
               <img className='Avatar' src={require('../public/image/320564998_1534201846993456_7510390030141632899_n.png')}></img>
+
             </div>
           </div>
 
